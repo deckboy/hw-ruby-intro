@@ -53,6 +53,6 @@ class BookInStock
   end
 
   def price_as_string
-    "$%.2f" %[@price]
+    "$%.2f" %@price
   end
 end
