@@ -25,15 +25,18 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  # YOUR CODE HER
+  "Hello, "+name
 end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
+  s[0] =~ /[bcdfghjklmnpqrstvwxyz]/i
 end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  s =~ /\b[01]+\b/ && s.to_i(2)%4==0
 end
 
 # Part 3
